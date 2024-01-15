@@ -1,4 +1,10 @@
 // Function expression to select elements `
+document.querySelector('#contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.target.elements.name.value = '';
+    e.target.elements.email.value = '';
+    e.target.elements.message.value = '';
+  });
 
 const selectElement = (s) => document.querySelector(s);
 const navLinks = document.querySelectorAll(".nav-link");
