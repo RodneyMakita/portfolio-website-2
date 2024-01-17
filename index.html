@@ -9,15 +9,6 @@
     <script src="https://kit.fontawesome.com/e17351acd4.js" crossorigin="anonymous"></script>
 
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script> src="Index.js"</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("QJr7kTKXOPdy7ULGZ");
-   })();
-</script>
   </head>
   <body>
     <header>
@@ -219,18 +210,40 @@
         </div>
         <hr />
       </section>
-      <h1>Contact Me</h1>
-      <form class="cf">
-        <div class="half left cf">
-          <input type="text" id="input-name" placeholder="Name">
-          <input type="email" id="input-email" placeholder="Email address">
-        
+      <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>
+          I'd love if you reached out to me. Even if it's just to say "Hey!".
+          Don't hesitate! Drop me a line and I’ll get back to you ASAP!
+        </p>
+        <p>
+          <i
+            >For gig and advertising opportunities, begin your subject with
+            <strong>"Gig"</strong></i
+          >
+        </p>
+        <div class="container">
+          <p>
+            <a href="mailto:sibongisenitimba@gmail.com"
+              ><i class="fas fa-envelope-open"></i> sibongisenitimba@gmail.com</a
+            >
+          </p>
+          <p>
+            <a href="https://www.linkedin.com/in/sibongiseni-rodney-timba-23779a22b?originalSubdomain=za" target="_blank"
+              ><i class="fab fa-linkedin"> LinkedIn</i></a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/RodneyMakita" target="_blank"><i class="fab fa-github"> Github</i></a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com/sibongiseni.timba" target="_blank"
+              ><i class="fab fa-facebook"> Facebook</i></a
+            >
+          </p>
         </div>
-        <div class="half right cf">
-          <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
-        </div>  
-        <button class="btn btn-primary" onclick="sendMail()">Submit</button>
-      </form>
+        <hr />
+      </section>
       <footer>
         <div class="footer-nav">
           <a href="#landing-page" class="footer-nav-link">Home</a>
