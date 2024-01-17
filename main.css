@@ -468,6 +468,34 @@ hr {
 
 /* Contact */
 
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 70rem;
+  margin: auto;
+  padding-top: 5rem;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.contact p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  padding: 0;
+  margin: 0.9rem 2rem;
+}
+
+.contact .container {
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 /* Footer */
 
 footer {
@@ -570,102 +598,4 @@ footer a {
   footer p {
     font-size: 1.2rem;
   }
-}@import "compass/css3";
-
-@import url(https://fonts.googleapis.com/css?family=Merriweather);
-$red: #e74c3c;
-
-*, 
-*:before, 
-*:after {
-   @include box-sizing(border-box); 
-}
-
-html, body {
- 
-  font-family: 'Merriweather', sans-serif;
-  padding: 1em;
-}
-
-h1 {
-   text-align: center;
-   color: #a8a8a8;
-   @include text-shadow(1px 1px 0 rgba(white, 1));
-}
-
-form {
-  
-   max-width: 600px;
-   text-align: center;
-   margin: 20px auto;
-  
-  input, textarea {
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      border-radius: 9px;
-     padding: 1em;
-     @include border-radius(8px);
-     display: block;
-     width: 100%;
-     margin-top: 1em;
-     font-family: 'Merriweather', sans-serif;
-     @include box-shadow(0 1px 1px rgba(black, 0.1));
-     resize: none;
-    
-    &:focus {
-       @include box-shadow(0 0px 2px rgba($red, 1)!important);
-    }
-  }
-  #input-message{
-    border-radius: 9px;
-  }
-  
-  #input-submit {
-    font
-     color: black; 
-     background: rgba(3, 155, 155);
-     cursor: pointer;
-     border-radius: 99px;
-    
-    &:hover {
-       @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6)); 
-    }
-  }
-  
-  textarea {
-      height: 126px;
-  }
-}
-
-
-.half {
-  float: left;
-  width: 48%;
-  margin-bottom: 1em;
-}
-
-.right { width: 50%; }
-
-.left {
-     margin-right: 2%; 
-}
-
-
-@media (max-width: 480px) {
-  .half {
-     width: 100%; 
-     float: none;
-     margin-bottom: 0; 
-  }
-}
-
-
-/* Clearfix */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
 }
